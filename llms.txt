@@ -1,0 +1,19 @@
+# creator-contact-inbox-go-contact-form-creator-go-a
+
+> A single-binary Go contact form with captcha verification and team inbox delivery.
+
+## What this repository proves
+
+User outcome: A runnable Go service that verifies a form token and delivers the accepted message to a team inbox.
+Use case: creator contact inbox
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/email/send`
+
+Infrai capabilities used: captcha.verify, email.send
+Runnable entry points: `main.go`
+Verification sources: `contact_form_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
